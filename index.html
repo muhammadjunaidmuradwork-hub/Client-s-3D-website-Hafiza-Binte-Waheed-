@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hafiza Binte Waheed | Online Quran Academy — Hifz & Tajweed</title>
+  <meta name="description" content="Join 250+ students from 10+ countries learning Hifz and Tajweed online with Hafiza Binte Waheed. Register for Kids' Tajweed, Female Tajweed, Group Hifz, or Private 1:1 Hifz classes." />
+  <meta property="og:title" content="Hafiza Binte Waheed | Quran Academy" />
+  <meta property="og:description" content="250+ Students · 10+ Countries · Learn Hifz & Tajweed in Simple Ways" />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href="https://hafizabintewaheed.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600;700&family=Noto+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+  <!-- ░░ LOADER ░░ -->
+  <div id="loader">
+    <div class="loader-inner">
+      <p class="loader-arabic">بِسْمِ ٱللَّهِ</p>
+      <div class="loader-brand">
+        <span>H</span><span>a</span><span>f</span><span>i</span><span>z</span><span>a</span>
+        <span> </span>
+        <span>B</span><span>i</span><span>n</span><span>t</span><span>e</span>
+        <span> </span>
+        <span>W</span><span>a</span><span>h</span><span>e</span><span>e</span><span>d</span>
+      </div>
+      <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+      <p class="loader-sub">Quran Academy</p>
+    </div>
+  </div>
+
+  <!-- ░░ CUSTOM CURSOR ░░ -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ░░ NOISE OVERLAY ░░ -->
+  <div class="noise-overlay"></div>
+
+  <!-- ░░ SCROLL PROGRESS ░░ -->
+  <div id="scroll-progress-bar"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo" data-magnetic>
+        <span class="logo-arabic">بِسْمِ ٱللَّهِ</span>
+        <span class="logo-text">Hafiza Binte Waheed</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#glimpse">Gallery</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#enroll" class="nav-cta" data-magnetic>Enroll Now</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge" data-reveal="fade">
+        <span class="badge-dot"></span>Now Enrolling · Limited Seats Available
+      </div>
+      <p class="hero-arabic" data-reveal="fade">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
+      <h1 class="hero-title" data-reveal="chars">
+        Hifz and Tajweed Made Simple<br />
+      </h1>
+      <p class="hero-subtitle" data-reveal="fade">
+        Helping sisters and children memorise and recite the Quran with confidence and correct Tajweed.
+      </p>
+      <div class="hero-stats" data-reveal="fade">
+        <div class="hero-stat"><strong>250+</strong><span>Students Worldwide</span></div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><strong>10+</strong><span>Countries</span></div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat"><strong>4</strong><span>Course Types</span></div>
+      </div>
+      <div class="hero-buttons" data-reveal="fade">
+        <a href="#courses" class="btn-primary" data-magnetic>
+          <i class="fas fa-book-open"></i> Book a Class
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE STATS ============ -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-inner" id="marqueeInner">
+        <span>250+ Students Worldwide</span><span class="marquee-dot">◆</span>
+        <span>10+ Countries</span><span class="marquee-dot">◆</span>
+        <span>Hifz & Tajweed</span><span class="marquee-dot">◆</span>
+        <span>Sisters-Only Environment</span><span class="marquee-dot">◆</span>
+        <span>Flexible Schedules</span><span class="marquee-dot">◆</span>
+        <span>Private & Group Classes</span><span class="marquee-dot">◆</span>
+        <span>Free Qur'an Resources</span><span class="marquee-dot">◆</span>
+        <span>Weekly Qur'an Newsletter</span><span class="marquee-dot">◆</span>
+        <!-- duplicate for seamless loop -->
+        <span>250+ Students Worldwide</span><span class="marquee-dot">◆</span>
+        <span>10+ Countries</span><span class="marquee-dot">◆</span>
+        <span>Hifz & Tajweed</span><span class="marquee-dot">◆</span>
+        <span>Sisters-Only Environment</span><span class="marquee-dot">◆</span>
+        <span>Flexible Schedules</span><span class="marquee-dot">◆</span>
+        <span>Private & Group Classes</span><span class="marquee-dot">◆</span>
+        <span>Free Qur'an Resources</span><span class="marquee-dot">◆</span>
+        <span>Weekly Qur'an Newsletter</span><span class="marquee-dot">◆</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-col">
+          <div class="about-img-wrapper" data-parallax="0.25">
+            <div class="img-curtain"></div>
+            <img src="assets/images/Profile.JPEG" alt="Hafiza Binte Waheed — Quran Teacher" class="about-img" onerror="this.classList.add('img-fallback')" />
+          </div>
+          <div class="about-floating-card" data-reveal="pop">
+            <i class="fas fa-certificate"></i>
+            <div><strong>Certified Hafiza</strong><span>& Tajweed Instructor</span></div>
+          </div>
+          <div class="about-floating-stat" data-reveal="pop" style="--d:0.2s">
+            <strong>250+</strong><span>Students Taught</span>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <span class="section-label" data-reveal="fade">About Your Teacher</span>
+          <h2 class="section-title" data-split>
+            Meet Hafiza<br /><em class="gradient-text">Binte Waheed</em>
+          </h2>
+          <div class="about-line" data-reveal="line"></div>
+          <p class="about-desc" data-reveal="fade">
+            Assalam u Alaikum. I'm Hafiza Binte Waheed, a certified Hafiza and Tajweed instructor passionate about making the Quran simple and accessible for every sister and child.
+          </p>
+          <p class="about-desc" data-reveal="fade">
+            Through personalised online classes, I've had the honour of teaching 250+ students across 10+ countries, helping them memorise and recite the Quran with confidence and correct Tajweed.
+          </p>
+          <p class="about-desc" data-reveal="fade">
+            I believe every sister and child deserves to experience the beauty of the Quran without feeling overwhelmed. That's why my vision is to make Hifz and Tajweed simple, structured, and enjoyable, helping students build a lifelong love for the Quran.
+          </p>
+          <p class="about-desc" data-reveal="fade">
+            For me, teaching the Quran is more than a profession—it's a means of serving the Book of Allah and helping others develop a sincere connection with it. May Allah ﷻ make us among Ahlul Qur'an, the people of the Quran. Ameen. 🤍🤲🏻
+          </p>
+          <div class="about-features" data-reveal="fade">
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>1-on-1 & Group Classes Available</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Flexible scheduling across all time zones</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Sisters & children-only environment</span></div>
+            <div class="about-feature"><i class="fas fa-check-circle"></i><span>Weekly Qur'an Fridays newsletter included</span></div>
+          </div>
+          <a href="#courses" class="btn-primary mt-2" data-magnetic data-reveal="fade">
+            <i class="fas fa-arrow-right"></i> Explore Courses
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS STRIP ============ -->
+  <section class="stats-strip">
+    <div class="stats-strip-inner">
+      <div class="stat-block" data-reveal="fade">
+        <h3><span class="counter" data-target="250">0</span>+</h3>
+        <p>Students Worldwide</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block" data-reveal="fade" style="--d:0.1s">
+        <h3><span class="counter" data-target="10">0</span>+</h3>
+        <p>Countries</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block" data-reveal="fade" style="--d:0.2s">
+        <h3><span class="counter" data-target="4">0</span></h3>
+        <p>Course Programs</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-block" data-reveal="fade" style="--d:0.3s">
+        <h3>5.0 ★</h3>
+        <p>Student Rating</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COURSES (HORIZONTAL SCROLL) ============ -->
+  <section class="courses-section" id="courses">
+    <div class="courses-pin-outer" id="coursesPinOuter">
+      <div class="courses-pin-inner">
+        <div class="courses-header">
+          <span class="section-label" data-reveal="fade">Enroll Today</span>
+          <h2 class="section-title" data-split id="enroll">
+            Choose Your <em class="gradient-text">Course</em>
+          </h2>
+          <p class="section-subtitle" data-reveal="fade">Select the program that fits your journey — fill in the form and Hafiza will be in touch personally.</p>
+        </div>
+        <div class="courses-h-track" id="coursesTrack">
+
+          <div class="course-card" data-cursor-text="Enroll →">
+            <div class="card-number">01</div>
+            <div class="course-icon"><i class="fas fa-child"></i></div>
+            <div class="course-badge">Ages 5–14</div>
+            <h3>Kids' Tajweed / Qaida</h3>
+            <p>A gentle, engaging introduction to Qur'anic reading and Tajweed for young learners.</p>
+            <ul class="course-features">
+              <li><i class="fas fa-check"></i> Noorani Qaida from scratch</li>
+              <li><i class="fas fa-check"></i> Basic Tajweed rules for kids</li>
+              <li><i class="fas fa-check"></i> Interactive & playful method</li>
+              <li><i class="fas fa-check"></i> Patient, nurturing teacher</li>
+            </ul>
+            <a href="https://forms.gle/ZpZmwdWQ9EubXqov6" target="_blank" rel="noopener noreferrer" class="course-btn" data-magnetic>
+              Register Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="course-card featured" data-cursor-text="Enroll →">
+            <div class="card-number">02</div>
+            <div class="course-icon"><i class="fas fa-quran"></i></div>
+            <div class="course-badge popular">Most Popular</div>
+            <h3>Female Tajweed Course</h3>
+            <p>Perfect your recitation in a sisters-only, supportive online environment guided by a certified instructor.</p>
+            <ul class="course-features">
+              <li><i class="fas fa-check"></i> All Tajweed rules covered</li>
+              <li><i class="fas fa-check"></i> Structured weekly lessons</li>
+              <li><i class="fas fa-check"></i> 1:1 or small group setting</li>
+              <li><i class="fas fa-check"></i> Sisters-only environment</li>
+            </ul>
+            <a href="https://forms.gle/ZpZmwdWQ9EubXqov6" target="_blank" rel="noopener noreferrer" class="course-btn" data-magnetic>
+              Register Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="course-card" data-cursor-text="Enroll →">
+            <div class="card-number">03</div>
+            <div class="course-icon"><i class="fas fa-users"></i></div>
+            <div class="course-badge">Sisters 15+</div>
+            <h3>Female Group Hifz</h3>
+            <p>Begin or continue your Hifz journey in a warm, motivating group setting. Grow together.</p>
+            <ul class="course-features">
+              <li><i class="fas fa-check"></i> Structured Hifz program</li>
+              <li><i class="fas fa-check"></i> Group accountability system</li>
+              <li><i class="fas fa-check"></i> Revision & new memorization</li>
+              <li><i class="fas fa-check"></i> Supportive sisterhood</li>
+            </ul>
+            <a href="https://forms.gle/NaYrZBiqT2xkdNpE8" target="_blank" rel="noopener noreferrer" class="course-btn" data-magnetic>
+              Register Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="course-card" data-cursor-text="Enroll →">
+            <div class="card-number">04</div>
+            <div class="course-icon"><i class="fas fa-user-graduate"></i></div>
+            <div class="course-badge premium">Premium</div>
+            <h3>Hifz 1:1 (Private)</h3>
+            <p>Personalized, intensive Hifz coaching — 100% focused on your pace, your style, your goals.</p>
+            <ul class="course-features">
+              <li><i class="fas fa-check"></i> 100% personalized curriculum</li>
+              <li><i class="fas fa-check"></i> Flexible schedule worldwide</li>
+              <li><i class="fas fa-check"></i> Dedicated revision tracking</li>
+              <li><i class="fas fa-check"></i> Direct teacher feedback</li>
+            </ul>
+            <a href="https://forms.gle/MC7JWwszSGGuJxBPA" target="_blank" rel="noopener noreferrer" class="course-btn" data-magnetic>
+              Register Now <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+        </div>
+        <div class="courses-scroll-hint">
+          <div class="scroll-hint-line"></div>
+          <span>Scroll to explore courses</span>
+          <div class="scroll-hint-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="testimonials-bg-text">LOVE</div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-reveal="fade">Student Love</span>
+        <h2 class="section-title" data-split>What Our <em class="gradient-text">Students Say</em></h2>
+        <p class="section-subtitle" data-reveal="fade">From sisters and families across the globe 🌍</p>
+      </div>
+      <div class="testimonials-track-wrapper">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>This Tajweed course has been a truly rewarding experience. It has improved my recitation, increased my confidence in reading the Qur'an, and made difficult concepts easy to understand through clear and engaging teaching.</p>
+            <div class="t-footer"><strong>itzpashh</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>Anyone who wants to learn Tajweed should enrol in this course without hesitation. The experience is valuable, satisfying, and something that will stay with you throughout your life.</p>
+            <div class="t-footer"><strong>Fariha</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>Alhamdulillah, I am very satisfied with your way of teaching. I want my daughter to stay connected with the Qur'an and learn gradually. Alhamdulillah, Elaf also loves her teacher.</p>
+            <div class="t-footer"><strong>Elaf</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>This has been a beautiful experience. I learn something new every day, and every lesson is engaging, beneficial, and easy to follow. The teacher is patient, kind, and genuinely cares.</p>
+            <div class="t-footer"><strong>Student</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>Your way of teaching Tajweed is gentle, clear, and inspiring. May Allah put immense barakah in your life and reward you with the highest ranks in Jannah for this blessed work.</p>
+            <div class="t-footer"><strong>~SHAIK</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>Alhamdulillah, the class was very beneficial. I used to think Tajweed was difficult, but the way you explained each point made everything so clear and beautiful. JazakAllah khair.</p>
+            <div class="t-footer"><strong>~Eman Fatima~</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>Alhamdulillah, the class was genuinely easy to understand. You explained everything with grace, ease, calmness, and patience. Every detail was on point and beautifully presented.</p>
+            <div class="t-footer"><strong>Dr. Tasneem</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>I have been taking your classes for more than a month and truly appreciate your efforts, support, patience, and encouragement. I hope to complete my Qur'an journey with your guidance, InshaAllah.</p>
+            <div class="t-footer"><strong>Doctor Minahil</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>The course is not only theoretical but also includes practical implementation. The hands-on practice sessions made it easier to apply the rules confidently. Beautifully designed and clearly delivered.</p>
+            <div class="t-footer"><strong>Student</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>I am truly grateful to be part of this Tajweed course. It has given me knowledge about correct Qur'an recitation and articulation points, helping me improve my recitation significantly.</p>
+            <div class="t-footer"><strong>Student</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>One of the best decisions Allah helped me make was building a relationship with the Qur'an. You have been an amazing teacher and guide, keeping me motivated every single day.</p>
+            <div class="t-footer"><strong>Student</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>The Qur'an should be taught with love, care, and understanding, and your teaching truly reflects that. I am glad I found you and hope to stay consistent in this journey with Allah's help.</p>
+            <div class="t-footer"><strong>Student</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>I joined the Tajweed class and it is honestly the best course I have taken. The Ustadha is kind, patient, detailed, calm, and teaches with real dedication and passion.</p>
+            <div class="t-footer"><strong>ummerahmeen</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>Alhamdulillah, the session was amazing and very motivating. You made everything sound easy to understand, especially ghunna, and explained it in a helpful, clear, and encouraging way.</p>
+            <div class="t-footer"><strong>Student</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>Your encouraging and appreciative words uplift my confidence. I feel fortunate to have you as my Qur'an teacher. Thank you for bringing out the enthusiasm I never knew I had.</p>
+            <div class="t-footer"><strong>Student</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <!-- Duplicate for infinite loop -->
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>This Tajweed course has been a truly rewarding experience. It has improved my recitation and made difficult concepts easy to understand through clear and engaging teaching.</p>
+            <div class="t-footer"><strong>itzpashh</strong><span class="stars">★★★★★</span></div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">✨</div>
+            <p>Anyone who wants to learn Tajweed should enrol in this course without hesitation. The experience is valuable and something that will stay with you.</p>
+            <div class="t-footer"><strong>Fariha</strong><span class="stars">★★★★★</span></div>
+          </div>
+        </div>
+        <button class="track-btn track-prev" onclick="slideTestimonials(-1)" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+        <button class="track-btn track-next" onclick="slideTestimonials(1)" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+      </div>
+      <div class="testimonial-dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="glimpse-section" id="glimpse">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-reveal="fade">Behind the Scenes</span>
+        <h2 class="section-title" data-split>A Glimpse from <em class="gradient-text">Our Classes</em></h2>
+      </div>
+      <div class="glimpse-grid">
+        <div class="glimpse-item tall" data-reveal="curtain">
+          <div class="glimpse-curtain"></div>
+          <img src="assets/images/class1.png" alt="Online Quran class" loading="lazy" onerror="this.classList.add('img-fallback')" />
+          <div class="glimpse-label">Live Online Sessions</div>
+        </div>
+        <div class="glimpse-item" data-reveal="curtain" style="--cd:0.1s">
+          <div class="glimpse-curtain"></div>
+          <img src="assets/images/class2.png" alt="Student learning Qaida" loading="lazy" onerror="this.classList.add('img-fallback')" />
+          <div class="glimpse-label">Kids Qaida Classes</div>
+        </div>
+        <div class="glimpse-item" data-reveal="curtain" style="--cd:0.2s">
+          <div class="glimpse-curtain"></div>
+          <img src="assets/images/class3.png" alt="Quran recitation" loading="lazy" onerror="this.classList.add('img-fallback')" />
+          <div class="glimpse-label">Sacred Learning</div>
+        </div>
+        <div class="glimpse-item wide" data-reveal="curtain" style="--cd:0.15s">
+          <div class="glimpse-curtain"></div>
+          <img src="assets/images/class4.png" alt="Group Hifz session" loading="lazy" onerror="this.classList.add('img-fallback')" />
+          <div class="glimpse-label">Group Hifz Sessions</div>
+        </div>
+      </div>
+      <div class="youtube-cta" data-reveal="fade">
+        <i class="fab fa-youtube"></i>
+        <div><strong>Watch Free Lessons on YouTube</strong><span>Tajweed tips, Qur'an reflections & more</span></div>
+        <a href="https://www.youtube.com/@hafiza_binte_waheed" target="_blank" rel="noopener noreferrer" class="btn-primary" data-magnetic>Visit Channel <i class="fas fa-external-link-alt"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESOURCES ============ -->
+  <section class="resources-section" id="resources">
+    <div class="resources-deco-circle"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label" data-reveal="fade">Completely Free</span>
+        <h2 class="section-title" data-split>Free Qur'an <em class="gradient-text">Resources</em></h2>
+        <p class="section-subtitle" data-reveal="fade">Carefully curated tools to support your Qur'an journey 🎁</p>
+      </div>
+      <div class="resources-grid">
+        <div class="resource-card" data-reveal="pop" style="--d:0s"><div class="resource-icon"><i class="fas fa-file-pdf"></i></div><h4>Tajweed Cheat Sheets</h4><p>Printable quick-reference guides for all major Tajweed rules</p><a href="https://store.hafizabintewaheed.com/" target="_blank" rel="noopener noreferrer" class="resource-link">Download Free <i class="fas fa-download"></i></a></div>
+        <div class="resource-card" data-reveal="pop" style="--d:0.1s"><div class="resource-icon"><i class="fas fa-calendar-check"></i></div><h4>Hifz Revision Tracker</h4><p>A structured daily planner to keep your memorization on track</p><a href="https://store.hafizabintewaheed.com/" target="_blank" rel="noopener noreferrer" class="resource-link">Download Free <i class="fas fa-download"></i></a></div>
+        <div class="resource-card" data-reveal="pop" style="--d:0.2s"><div class="resource-icon"><i class="fas fa-book-open-reader"></i></div><h4>Beginner Qaida Guide</h4><p>Step-by-step introduction to Arabic letters and Qur'anic reading</p><a href="https://store.hafizabintewaheed.com/" target="_blank" rel="noopener noreferrer" class="resource-link">Download Free <i class="fas fa-download"></i></a></div>
+        <div class="resource-card" data-reveal="pop" style="--d:0.3s"><div class="resource-icon"><i class="fas fa-store"></i></div><h4>Full Resource Library</h4><p>Browse the complete collection of Qur'an tools, planners & more</p><a href="https://store.hafizabintewaheed.com/" target="_blank" rel="noopener noreferrer" class="resource-link">Visit Store <i class="fas fa-external-link-alt"></i></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter-section" id="newsletter">
+    <div class="newsletter-inner" data-reveal="pop">
+      <div class="nl-bg-pattern"></div>
+      <div class="nl-glow"></div>
+      <p class="nl-arabic">قُرْآنٌ كَرِيمٌ</p>
+      <i class="fas fa-envelope-open-text nl-icon"></i>
+      <h2 data-split>Join <em class="gradient-text">Qur'an Fridays</em> 📖</h2>
+      <p>A soulful weekly newsletter for sisters — Tajweed tips, Hifz hacks, du'as & reflections. <strong>Completely free. No spam. Only goodness.</strong></p>
+      <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+        <div class="nl-input-wrap"><i class="fas fa-envelope"></i><input type="email" id="newsletterEmail" placeholder="Enter your email address…" required /></div>
+        <button type="submit" class="btn-primary" data-magnetic>Subscribe <i class="fas fa-paper-plane"></i></button>
+      </form>
+      <p class="nl-note"><i class="fas fa-lock"></i> Your privacy is protected. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <h2 class="footer-brand-name" data-split>Hafiza Binte<br /><em class="gradient-text">Waheed</em></h2>
+        <p class="footer-tagline">Teaching Hifz & Tajweed in simple, beautiful ways — to students across the world. 🌍</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/hafizabintewaheed_official/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-link" data-magnetic><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@hafiza_binte_waheed" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="social-link" data-magnetic><i class="fab fa-youtube"></i></a>
+          <a href="https://www.pinterest.com/hafizabintewaheed/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="social-link" data-magnetic><i class="fab fa-pinterest"></i></a>
+          <a href="https://www.threads.com/@hafiza_binte_waheed" target="_blank" rel="noopener noreferrer" aria-label="Threads" class="social-link" data-magnetic><i class="fab fa-threads"></i></a>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div class="footer-links-col"><h4>Navigate</h4><ul><li><a href="#about">About Hafiza</a></li><li><a href="#courses">Our Courses</a></li><li><a href="#quiz">Find My Course</a></li><li><a href="#testimonials">Student Reviews</a></li><li><a href="#glimpse">Class Gallery</a></li><li><a href="#resources">Free Resources</a></li></ul></div>
+        <div class="footer-links-col"><h4>Programs</h4><ul><li><a href="https://forms.gle/ZpZmwdWQ9EubXqov6" target="_blank" rel="noopener noreferrer">Kids' Tajweed / Qaida</a></li><li><a href="https://forms.gle/ZpZmwdWQ9EubXqov6" target="_blank" rel="noopener noreferrer">Female Tajweed Course</a></li><li><a href="https://forms.gle/NaYrZBiqT2xkdNpE8" target="_blank" rel="noopener noreferrer">Group Hifz (Sisters 15+)</a></li><li><a href="https://forms.gle/MC7JWwszSGGuJxBPA" target="_blank" rel="noopener noreferrer">Private 1:1 Hifz</a></li><li><a href="https://store.hafizabintewaheed.com/" target="_blank" rel="noopener noreferrer">Free Resources Store</a></li></ul></div>
+        <div class="footer-newsletter-col"><h4>Qur'an Fridays 📖</h4><p>Weekly Qur'anic goodness. Join 250+ sisters.</p><form class="footer-form" onsubmit="handleNewsletterSubmit(event)"><input type="email" placeholder="Your email…" required /><button type="submit" data-magnetic><i class="fas fa-arrow-right"></i></button></form></div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Hafiza Binte Waheed · All Rights Reserved · <span class="footer-love">Made with 💗 for the Ummah</span></p>
+        <p class="footer-stats">250+ Students · 10+ Countries · We Teach Hifz & Tajweed in Simple Ways</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" onclick="scrollToTop()" aria-label="Back to top" data-magnetic>
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- ░░ SCRIPTS ░░ -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
